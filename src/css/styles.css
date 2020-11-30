@@ -235,9 +235,10 @@ h2 > a {
   color: grey;
 }
 
-section.latest {
+section.latest,
+section.sections {
   margin-top: 30px;
-  padding: 0 20px;
+  padding: 20px;
   padding-top: 24px;
 }
 
@@ -288,20 +289,47 @@ div.latest {
 footer {
   background-color: #131313;
   width: 100vw;
-  height: 35vh;
+  height: 40vh;
   position: relative;
 }
 
-.footer-link {
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.icons div {
+  width: 40px;
+  height: 40px;
   background-color: #555;
-  /* border-radius: 50%; */
-  width: 60px;
-  height: 60px;
+  border-radius: 50%;
+  margin: 3px;
+  margin-top: 20px;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.footer-nav a {
+  color: grey;
+  font-size: smaller;
+}
+
+.footer-link {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
 }
 
 .footer-icon {
   width: 20px;
-  height: auto;
+  height: 20px;
 }
 
 .credits {
@@ -315,4 +343,29 @@ footer {
   height: 10vh;
   padding-top: 30px;
   font-size: smaller;
+}
+
+div.sections {
+  border: 1px solid black;
+}
+
+section.sections {
+  border: 1px solid blue;
+}
+
+.section-panel {
+  border: 1px solid green;
+}
+
+.cover-popular {
+  margin: 0;
+}
+
+.bg-popular {
+  height: 40vh;
+  max-height: initial;
+}
+
+.latest-popular {
+  background-color: rgba(255, 68, 34, 0.06);
 }
