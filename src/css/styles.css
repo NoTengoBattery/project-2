@@ -69,7 +69,7 @@ h2 {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 28px;
   letter-spacing: -0.015em;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 h2 > a {
@@ -157,14 +157,15 @@ section.latest {
 
 div.latest {
   display: flex;
+  flex-direction: column;
 }
 
 .latest-item {
   flex-basis: 100%;
   max-width: 100%;
-  padding: 8px;
   min-height: 72px;
   display: flex;
+  margin: 4px 0;
 }
 
 .latest-item img {
