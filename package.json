@@ -1,18 +1,18 @@
 {
-  "name": "project-template",
-  "version": "0.0.0",
-  "description": "Template for HTML/CSS/JS (frontend) projects.",
+  "name": "project-2",
+  "version": "1.0.0",
+  "description": "Project 2: copy or TNW",
   "main": "gulpfile.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/NoTengoBattery/html-css-template.git"
+    "url": "git+https://github.com/NoTengoBattery/project-2.git"
   },
   "author": "Oever González (NoTengoBattery)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/NoTengoBattery/html-css-template/issues"
+    "url": "https://github.com/NoTengoBattery/project-2/issues"
   },
-  "homepage": "https://github.com/NoTengoBattery/html-css-template#readme",
+  "homepage": "https://github.com/NoTengoBattery/project-2#readme",
   "devDependencies": {
     "@lhci/cli": "",
     "gulp": "",
