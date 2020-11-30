@@ -286,6 +286,10 @@ div.latest {
   margin: 0 4px;
 }
 
+.list-wrapper {
+  background-color: #fff;
+}
+
 .list-wrapper hr {
   margin: 10px 20px 10px 20px;
 }
@@ -293,6 +297,7 @@ div.latest {
 .list-style {
   list-style: disc;
   padding: 0 0 0 20px;
+  background-color: #fff;
 }
 
 footer {
