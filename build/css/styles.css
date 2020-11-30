@@ -150,9 +150,96 @@ h2 > a {
   right: 3px;
 }
 
-section.latest {
+.latest-funding {
+  padding: 20px;
+}
+
+.funding-wrapper {
+  background-color: rgba(255, 68, 34, 0.03);
+  position: relative;
+  padding-bottom: 18px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.funding-links {
+  display: flex;
+  flex-direction: column;
+  line-height: 30px;
+  font-size: small;
+  color: #f42;
+}
+
+.funding-links a {
+  color: #f42;
+}
+
+.funding-image {
+  width: 70px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.funding-title {
+  background-color: #f42;
+  height: 45px;
+}
+
+.funding-title p {
+  position: relative;
+  margin-left: 90px;
+  top: 12px;
+  font-weight: bold;
+  font-size: large;
+  color: #fff;
+}
+
+.funding-price {
+  background-color: rgba(255, 68, 34, 0.08);
+  height: 60px;
+  color: #000;
+}
+
+.funding-price p {
+  position: relative;
+  top: 12px;
+  margin-left: 90px;
+  color: #000;
+}
+
+.funding-tags {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  color: #000;
+}
+
+.funding-tags img {
+  margin-right: 10px;
+}
+
+.funding-icons {
+  width: 20px;
+  height: 20px;
+}
+
+.funding-desc {
+  margin: 20px;
+  font-size: small;
+  font-weight: 400;
+  line-height: 15px;
+  color: #000;
+}
+
+.funding-desc span {
+  color: grey;
+}
+
+section.latest,
+section.sections {
   margin-top: 30px;
-  padding: 0 20px;
+  padding: 20px;
   padding-top: 24px;
 }
 
@@ -199,4 +286,29 @@ div.latest {
 .latest-author::after {
   content: "\B7";
   margin: 0 4px;
+}
+
+div.sections {
+  border: 1px solid black;
+}
+
+section.sections {
+  border: 1px solid blue;
+}
+
+.section-panel {
+  border: 1px solid green;
+}
+
+.cover-popular {
+  margin: 0;
+}
+
+.bg-popular {
+  height: 40vh;
+  max-height: initial;
+}
+
+.latest-popular {
+  background-color: rgba(255, 68, 34, 0.06);
 }

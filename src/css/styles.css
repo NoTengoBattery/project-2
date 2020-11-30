@@ -235,9 +235,10 @@ h2 > a {
   color: grey;
 }
 
-section.latest {
+section.latest,
+section.sections {
   margin-top: 30px;
-  padding: 0 20px;
+  padding: 20px;
   padding-top: 24px;
 }
 
@@ -283,4 +284,29 @@ div.latest {
 .latest-author::after {
   content: "\B7";
   margin: 0 4px;
+}
+
+div.sections {
+  border: 1px solid black;
+}
+
+section.sections {
+  border: 1px solid blue;
+}
+
+.section-panel {
+  border: 1px solid green;
+}
+
+.cover-popular {
+  margin: 0;
+}
+
+.bg-popular {
+  height: 40vh;
+  max-height: initial;
+}
+
+.latest-popular {
+  background-color: rgba(255, 68, 34, 0.06);
 }
