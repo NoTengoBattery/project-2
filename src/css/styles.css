@@ -6,7 +6,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  box-shadow: 0 0 32px rgba(0, 0, 0, .15);
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
 }
 
 nav {
@@ -16,7 +16,6 @@ nav {
 div.nav-logo {
   background-color: black;
   height: 100%;
-  width: fit-content;
   float: left;
 }
 
