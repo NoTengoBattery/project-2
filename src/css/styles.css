@@ -1,5 +1,5 @@
-div {
-  display: block;
+a {
+  text-decoration: none;
 }
 
 header {
@@ -48,7 +48,6 @@ div.nav-ics {
 
 a.nav-ics {
   font-size: 16px;
-  text-decoration: none;
 }
 
 a.nav-ics-sch {
@@ -57,4 +56,24 @@ a.nav-ics-sch {
 
 a.nav-ics-menu {
   color: #f42;
+}
+
+section.latest-news {
+  border: 1px solid black;
+  margin-top: 60px;
+
+  padding: 0 20px;
+  padding-top: 24px;
+}
+
+h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 28px;
+  letter-spacing: -.015em;
+}
+
+h2 > a {
+  color: #f42;
+  font-weight: 700;
+  line-height: 1.1;
 }
