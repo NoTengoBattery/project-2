@@ -1,3 +1,61 @@
 div {
   display: block;
 }
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 0 32px rgba(0, 0, 0, .15);
+}
+
+nav {
+  height: 48px;
+}
+
+div.nav-logo {
+  background-color: black;
+  height: 100%;
+  width: fit-content;
+  float: left;
+}
+
+a.nav-logo {
+  width: 106px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+img.nav-logo {
+  height: 16px;
+}
+
+div.nav-icons {
+  float: right;
+  height: 100%;
+}
+
+div.nav-ics {
+  width: 48px;
+  height: 48px;
+  float: left;
+  border-left: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+a.nav-ics {
+  font-size: 16px;
+  text-decoration: none;
+}
+
+a.nav-ics-sch {
+  color: #555;
+}
+
+a.nav-ics-menu {
+  color: #f42;
+}
