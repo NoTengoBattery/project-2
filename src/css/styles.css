@@ -284,3 +284,35 @@ div.latest {
   content: "\B7";
   margin: 0 4px;
 }
+
+footer {
+  background-color: #131313;
+  width: 100vw;
+  height: 35vh;
+  position: relative;
+}
+
+.footer-link {
+  background-color: #555;
+  /* border-radius: 50%; */
+  width: 60px;
+  height: 60px;
+}
+
+.footer-icon {
+  width: 20px;
+  height: auto;
+}
+
+.credits {
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  margin: 0 auto;
+  text-align: center;
+  width: 100vw;
+  height: 10vh;
+  padding-top: 30px;
+  font-size: smaller;
+}
