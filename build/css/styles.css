@@ -2,10 +2,6 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-a {
-  text-decoration: none;
-}
-
 header {
   position: fixed;
   top: 0;
@@ -13,6 +9,11 @@ header {
   box-shadow: 0 0 32px rgba(0, 0, 0, 0.15);
   z-index: 999;
   background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 nav {
@@ -64,17 +65,11 @@ a.nav-ics-menu {
   color: #f42;
 }
 
-section.latest-news {
-  border: 1px solid black;
-  margin-top: 30px;
-  padding: 0 20px;
-  padding-top: 24px;
-}
-
 h2 {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 28px;
   letter-spacing: -0.015em;
+  margin-bottom: 24px;
 }
 
 h2 > a {
@@ -153,4 +148,54 @@ h2 > a {
   position: relative;
   top: 5px;
   right: 3px;
+}
+
+section.latest {
+  margin-top: 30px;
+  padding: 0 20px;
+  padding-top: 24px;
+}
+
+div.latest {
+  display: flex;
+}
+
+.latest-item {
+  flex-basis: 100%;
+  max-width: 100%;
+  padding: 8px;
+  min-height: 72px;
+  display: flex;
+}
+
+.latest-item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 75px;
+  width: 75px;
+  margin-right: 13px;
+}
+
+.latest-content {
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+}
+
+.latest-content > h4 {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 700;
+  margin-bottom: 1px;
+}
+
+.latest-info,
+.latest-info a {
+  color: #aaa;
+  padding-top: 4px;
+}
+
+.latest-author::after {
+  content: "\B7";
+  margin: 0 4px;
 }
