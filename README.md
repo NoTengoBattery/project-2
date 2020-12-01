@@ -4,7 +4,7 @@
 
 > A clone of The Next Web website using media queries and responsive, mobile-first design.
 
-![screenshot](assets/screenshot/iphone6-snapshot.png)
+![Screenshot from a iPhone 6 screen size](assets/screenshots/iphone6-snapshot.png)
 
 This project is a responsive copy of the The Next Web website. It uses responsive elements such as CSS grid, flexbox and floats. The site scales well with resolution, but it also contains 3 media queries to adapt better to different screen sizes.
 
