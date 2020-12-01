@@ -536,6 +536,10 @@ div.sections {
   .funding-grid > :nth-child(3) {
     margin-right: 0;
   }
+
+  div.sections {
+    grid-template: 1fr / repeat(2, 1fr);
+  }
 }
 
 @media only screen and (min-width: 1024px) {}
