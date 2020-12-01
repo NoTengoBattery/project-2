@@ -521,13 +521,13 @@ div.sections {
     grid-gap: 10px;
   }
 
-  .latest-item {
+  .latest-item2 {
     display: block;
     min-width: 230px;
     max-width: 328px;
   }
 
-  .latest-item img {
+  .latest-item2 img {
     width: 100%;
     height: auto;
   }
@@ -576,7 +576,7 @@ div.sections {
 
   .top-links2 {
     position: relative;
-    
+
   }
 
   .toplinks3 {
