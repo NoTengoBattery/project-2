@@ -376,7 +376,7 @@ section.sections {
 }
 
 .bg-popular {
-  height: 40vh;
+  height: 100%;
   max-height: initial;
 }
 
