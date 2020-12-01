@@ -516,6 +516,24 @@ div.sections {
     margin: 3px;
   }
 
+  .latest-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .latest-item2 {
+    display: block;
+    min-width: 230px;
+    max-width: 328px;
+  }
+
+  .latest-item2 img {
+    width: 100%;
+    height: auto;
+  }
+
   .story-section {
     grid-template: repeat(2, 1fr) / 3fr 2fr;
     height: 50vh;
@@ -538,6 +556,64 @@ div.sections {
   .funding-grid > :nth-child(3) {
     margin-right: 0;
   }
+
+  div.sections {
+    grid-template: 1fr / repeat(2, 1fr);
+  }
 }
 
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+  .story-section {
+    margin-top: 90px;
+  }
+
+  .medium-logo {
+    display: none;
+  }
+
+  .nav2 {
+    position: relative;
+  }
+
+  .top-links1 {
+    position: relative;
+    left: 15px;
+  }
+
+  .top-links2 {
+    position: relative;
+    left: 0;
+  }
+
+  .top-links3 {
+    position: relative;
+    left: 15px;
+  }
+
+  .latest1 {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  .latest-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .funding-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .funding-grid > :last-child {
+    margin-left: 20px;
+    display: block;
+  }
+
+  div.sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+}
