@@ -16,7 +16,19 @@ a {
   color: black;
 }
 
-nav {
+.medium-logo {
+  display: none;
+}
+
+.nav1 {
+  display: none;
+}
+
+.nav2 {
+  display: none;
+}
+
+.nav3 {
   height: 48px;
 }
 
@@ -79,12 +91,16 @@ h2 > a {
 }
 
 .story-section {
+  display: grid;
+  grid-template: repeat(3, 1fr) / 1fr;
   margin-top: 55px;
   z-index: 1;
+  height: 90vh;
 }
 
 .cover-story {
   margin: 10px;
+  margin-top: 0;
   position: relative;
   max-height: 100%;
 }
@@ -100,12 +116,11 @@ h2 > a {
   z-index: 5;
 }
 
-.bg-image {
-  width: 100%;
-  height: 30vh;
-  max-height: 28vh;
-  -o-object-fit: cover;
-     object-fit: cover;
+.cover-bgi {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
 }
 
 .story-text {
@@ -159,11 +174,19 @@ h2 > a {
   padding: 20px;
 }
 
+.funding-grid {
+  display: grid;
+  grid-template: 1fr / 1fr;
+}
+
+.funding-grid > :last-child {
+  display: none;
+}
+
 .funding-wrapper {
   background-color: rgba(255, 68, 34, 0.03);
   position: relative;
   padding-bottom: 18px;
-  width: 100%;
   margin-top: 20px;
 }
 
@@ -407,7 +430,9 @@ div.sections {
 
 .bg-popular {
   height: 100%;
-  max-height: initial;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .latest-popular {
@@ -431,6 +456,88 @@ div.sections {
   padding: 16px;
 }
 
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+  .nav3 {
+    display: none;
+  }
+
+  .medium-logo {
+    background-color: #000;
+    min-width: 100px;
+    max-width: 100px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 999;
+  }
+
+  .nav1 {
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    background-color: #131313;
+    height: 30px;
+    align-items: center;
+    position: relative;
+  }
+
+  .top-links1 {
+    position: relative;
+    left: 105px;
+  }
+
+  .top-links2 {
+    margin-right: 25px;
+  }
+
+  .nav1 a {
+    font-size: small;
+    margin: 3px;
+  }
+
+  .nav2 {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    font-size: 13px;
+    align-items: center;
+    height: 43px;
+  }
+
+  .top-links3 {
+    position: relative;
+    left: 105px;
+  }
+
+  .nav2 a {
+    color: #555;
+    padding-right: 10px;
+    margin: 3px;
+  }
+
+  .story-section {
+    grid-template: repeat(2, 1fr) / 3fr 2fr;
+    height: 50vh;
+  }
+
+  .story-section > :first-child {
+    grid-area: 1 / 1 / span 2 / span 1;
+    margin-right: 0;
+  }
+
+  .funding-grid {
+    display: grid;
+    grid-template: 1fr / repeat(3, 1fr);
+  }
+
+  .funding-wrapper {
+    margin-right: 20px;
+  }
+
+  .funding-grid > :nth-child(3) {
+    margin-right: 0;
+  }
+}
 
 @media only screen and (min-width: 1024px) {}
