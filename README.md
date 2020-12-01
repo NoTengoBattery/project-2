@@ -1,59 +1,42 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Project 2: Responsive clone of TNW
 
-> One paragraph statement about the project.
+> A clone of The Next Web website using media queries and responsive, mobile-first design.
 
-![screenshot](./app_screenshot.png)
+![screenshot](assets/screenshot/iphone6-snapshot.png)
 
-Additional description about the project and its features.
+This project is a responsive copy of the The Next Web website. It uses responsive elements such as CSS grid, flexbox and floats. The site scales well with resolution, but it also contains 3 media queries to adapt better to different screen sizes.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- CSS3
+- HTML4
+- Node.js (for Linters and GULP)
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://notengobattery.github.io/project-2)
 
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
-
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
-
-### Setup
-
-### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
+For this project, you do not need to do anything. You can see the project working inside the Live Demo link above. Anyway, if you want a local copy of this project you can clone it using `git` and run it in your browser by opening the `index.html` file.
 
 
 ## Authors
 
-👤 **Author1**
+👤 **Oever González**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
+- GitHub: [@NoTengoBattery](https://github.com/NoTengoBattery)
+- Twitter: [@NoTengoBattery](https://twitter.com/NoTengoBattery)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/jos%C3%A9-oever-gonz%C3%A1lez-hern%C3%A1ndez-7b822a1b6/)
 
-👤 **Author2**
+👤 **Luis Vinicius**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/linkedinhandle)
+- GitHub: [@luisvinicius09](https://github.com/luisvinicius09)
+- Twitter: [@luisvinicius09](https://twitter.com/luisvinicius09)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/luis-vinicius)
 
 ## 🤝 Contributing
 
@@ -67,10 +50,8 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Thank you, StackOverflow and W3Schools
 
 ## 📝 License
 
-This project is [MIT](lic.url) licensed.
+This project is [MIT](https://opensource.org/licenses/MIT) licensed.
