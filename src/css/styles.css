@@ -16,7 +16,19 @@ a {
   color: black;
 }
 
-nav {
+.medium-logo {
+  display: none;
+}
+
+.nav1 {
+  display: none;
+}
+
+.nav2 {
+  display: none;
+}
+
+.nav3 {
   height: 48px;
 }
 
@@ -432,6 +444,64 @@ div.sections {
 }
 
 @media only screen and (min-width: 768px) {
+  .nav3 {
+    display: none;
+  }
+
+  .medium-logo {
+    background-color: #000;
+    min-width: 100px;
+    max-width: 100px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 999;
+  }
+  
+  .nav1 {
+    color: #000;
+    display: flex;
+    justify-content: space-between;
+    background-color: #131313;
+    height: 30px;
+    align-items: center;
+    position: relative;
+  }
+
+  .top-links1 {
+    position: relative;
+    left: 105px;
+  }
+
+  .top-links2 {
+    margin-right: 25px;
+  }
+
+  .nav1 a {
+    font-size: small;
+    margin: 3px;
+  }
+
+  .nav2 {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    font-size: 13px;
+    align-items: center;
+    height: 43px;
+  }
+
+  .top-links3 {
+    position: relative;
+    left: 105px;
+  }
+
+  .nav2 a {
+    color: #555;
+    padding-right: 10px;
+    margin: 3px;
+  }
   .story-section {
     grid-template: 1fr 1fr / 2fr 1fr;
   }
