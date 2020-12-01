@@ -261,7 +261,6 @@ h2 > a {
 
 section.latest,
 section.sections {
-  margin-top: 30px;
   padding: 20px;
   padding-top: 24px;
 }
@@ -396,15 +395,8 @@ footer {
 }
 
 div.sections {
-  border: 1px solid black;
-}
-
-section.sections {
-  border: 1px solid blue;
-}
-
-.section-panel {
-  border: 1px solid green;
+  display: grid;
+  grid-template: 1fr / 1fr;
 }
 
 .cover-popular {
@@ -437,10 +429,6 @@ section.sections {
   padding: 16px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {}
 
-}
-
-@media only screen and (min-width: 1024px) {
-  
-}
+@media only screen and (min-width: 1024px) {}
