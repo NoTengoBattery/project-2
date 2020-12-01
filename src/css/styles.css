@@ -561,7 +561,6 @@ div.sections {
 }
 
 @media only screen and (min-width: 1024px) {
-
   .story-section {
     margin-top: 90px;
   }
@@ -569,7 +568,7 @@ div.sections {
   .medium-logo {
     display: none;
   }
-  
+
   .nav2 {
     position: relative;
   }
