@@ -561,6 +561,11 @@ div.sections {
 }
 
 @media only screen and (min-width: 1024px) {
+
+  .story-section {
+    margin-top: 90px;
+  }
+
   .medium-logo {
     display: none;
   }
@@ -571,16 +576,43 @@ div.sections {
 
   .top-links1 {
     position: relative;
-    left: 0;
+    left: 15px;
   }
 
   .top-links2 {
     position: relative;
-
+    left: 0;
   }
 
-  .toplinks3 {
+  .top-links3 {
     position: relative;
-    left: 0;
+    left: 15px;
+  }
+
+  .latest1 {
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+  .latest-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .funding-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .funding-grid > :last-child {
+    margin-left: 20px;
+    display: block;
+  }
+
+  div.sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 1300px;
+    margin: 0 auto;
   }
 }
