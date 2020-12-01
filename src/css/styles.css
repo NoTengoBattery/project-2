@@ -126,11 +126,16 @@ h2 > a {
 }
 
 .story-author {
+  display: flex;
   max-width: 300px;
   justify-content: space-around;
   margin-left: -6px;
   font-size: smaller;
   color: grey;
+}
+
+.style-flex {
+  display: flex;
 }
 
 .clock-icon {
@@ -235,6 +240,25 @@ h2 > a {
   color: grey;
 }
 
+.font-bolder {
+  font-weight: bolder;
+}
+
+.font-small-grey {
+  font-size: small;
+  color: grey;
+}
+
+.display-flex-margin1 {
+  display: flex;
+  margin-top: 12px;
+}
+
+.display-flex-margin2 {
+  display: flex;
+  margin-top: 15px;
+}
+
 section.latest,
 section.sections {
   margin-top: 30px;
@@ -275,6 +299,10 @@ div.latest {
   margin-bottom: 1px;
 }
 
+.latest-info {
+  font-size: small;
+}
+
 .latest-info,
 .latest-info a {
   color: #aaa;
@@ -288,6 +316,7 @@ div.latest {
 
 .list-wrapper {
   background-color: #fff;
+  margin-top: 15px;
 }
 
 .list-wrapper hr {
@@ -298,6 +327,13 @@ div.latest {
   list-style: disc;
   padding: 0 0 0 20px;
   background-color: #fff;
+  color: #f42;
+}
+
+.list-style p {
+  color: #000;
+  font-size: 13px;
+  font-weight: 400;
 }
 
 footer {
@@ -399,4 +435,12 @@ section.sections {
 
 .latest-popular > .latest-item .latest-content {
   padding: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
+@media only screen and (min-width: 1024px) {
+  
 }
