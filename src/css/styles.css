@@ -514,6 +514,24 @@ div.sections {
     margin: 3px;
   }
 
+  .latest-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  .latest-item {
+    display: block;
+    min-width: 230px;
+    max-width: 328px;
+  }
+
+  .latest-item img {
+    width: 100%;
+    height: auto;
+  }
+
   .story-section {
     grid-template: repeat(2, 1fr) / 3fr 2fr;
     height: 50vh;
