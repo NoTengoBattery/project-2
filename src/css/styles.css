@@ -79,6 +79,8 @@ h2 > a {
 }
 
 .story-section {
+  display: grid;
+  grid-template: 1fr / 1fr;
   margin-top: 55px;
   z-index: 1;
 }
@@ -429,6 +431,10 @@ div.sections {
   padding: 16px;
 }
 
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+  .story-section {
+    grid-template: 1fr 1fr / 2fr 1fr;
+  }
+}
 
 @media only screen and (min-width: 1024px) {}
