@@ -289,6 +289,10 @@ h2 > a {
   color: white;
 }
 
+.display-flex {
+  display: flex;
+}
+
 .display-flex-margin1 {
   display: flex;
   margin-top: 12px;
@@ -307,6 +311,11 @@ h2 > a {
 .display-flex-spacebt{
   display: flex;
   justify-content: space-between;
+}
+
+.no-margin-padding {
+  margin: 0;
+  padding: 0;
 }
 
 section.latest,
