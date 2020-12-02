@@ -590,7 +590,6 @@ div.sections {
 }
 
 @media only screen and (min-width: 1024px) {
-
   .top-links1,
   .top-links2,
   .top-links3,
@@ -622,10 +621,6 @@ div.sections {
   .top-links1,
   .top-links3 {
     left: 15px;
-  }
-
-  .top-links2 {
-    left: 0;
   }
 
   .latest1 {
