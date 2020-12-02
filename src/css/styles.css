@@ -583,6 +583,10 @@ div.sections {
   div.sections {
     grid-template: 1fr / repeat(2, 1fr);
   }
+
+  .larger-logo {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
