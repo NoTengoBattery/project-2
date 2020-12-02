@@ -58,7 +58,6 @@ div.nav-ics {
   height: 48px;
   float: left;
   border-left: 1px solid #eee;
-  display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -140,16 +139,11 @@ h2 > a {
 }
 
 .story-author {
-  display: flex;
   max-width: 300px;
   justify-content: space-around;
   margin-left: -6px;
   font-size: smaller;
   color: grey;
-}
-
-.style-flex {
-  display: flex;
 }
 
 .story-icon {
@@ -181,7 +175,6 @@ h2 > a {
 }
 
 .funding-links {
-  display: flex;
   flex-direction: column;
   line-height: 30px;
   font-size: small;
@@ -227,7 +220,6 @@ h2 > a {
 }
 
 .funding-tags {
-  display: flex;
   flex-direction: column;
   margin: 20px;
   color: #000;
@@ -323,7 +315,6 @@ div.latest {
   flex-basis: 100%;
   max-width: 100%;
   min-height: 72px;
-  display: flex;
   margin: 4px 0;
 }
 
@@ -335,7 +326,6 @@ div.latest {
 }
 
 .latest-content {
-  display: flex;
   flex-direction: column;
   font-size: 12px;
 }
@@ -392,7 +382,6 @@ footer {
 }
 
 .icons {
-  display: flex;
   flex-direction: row;
   justify-content: center;
 }
@@ -407,7 +396,6 @@ footer {
 }
 
 .footer-nav {
-  display: flex;
   justify-content: space-between;
   max-width: 300px;
   margin: 0 auto;
@@ -420,7 +408,6 @@ footer {
 }
 
 .footer-link {
-  display: flex;
   justify-content: center;
   padding-top: 10px;
 }
