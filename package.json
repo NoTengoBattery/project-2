@@ -14,16 +14,17 @@
   },
   "homepage": "https://github.com/NoTengoBattery/project-2#readme",
   "devDependencies": {
-    "@lhci/cli": "",
-    "gulp": "",
-    "gulp-autoprefixer": "",
-    "gulp-watch": "",
-    "gulpfile": "",
-    "hint": "",
-    "lighthouse": "",
-    "stylelint": "",
-    "stylelint-config-standard": "",
-    "stylelint-csstree-validator": "",
-    "stylelint-scss": ""
+    "@lhci/cli": "*",
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-watch": "*",
+    "gulpfile": "*",
+    "hint": "*",
+    "lighthouse": "*",
+    "sass": "*",
+    "stylelint": "*",
+    "stylelint-config-standard": "*",
+    "stylelint-csstree-validator": "*",
+    "stylelint-scss": "*"
   }
 }

@@ -34,6 +34,7 @@ else
   echo "Failed to install all dependencies."
   exit 3
 fi
+$NPM audit fix
 
 readonly GIT=$(_which git)
 if [ -z "$GIT" ]; then
