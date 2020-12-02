@@ -16,6 +16,10 @@ a {
   color: black;
 }
 
+.line-through {
+  text-decoration: line-through;
+}
+
 .medium-logo {
   display: none;
 }
@@ -273,6 +277,18 @@ h2 > a {
   color: grey;
 }
 
+.color-orange {
+  color: #f42;
+}
+
+.color-grey {
+  color: grey;
+}
+
+.color-white {
+  color: white;
+}
+
 .display-flex-margin1 {
   display: flex;
   margin-top: 12px;
@@ -281,6 +297,16 @@ h2 > a {
 .display-flex-margin2 {
   display: flex;
   margin-top: 15px;
+}
+
+.display-flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.display-flex-spacebt{
+  display: flex;
+  justify-content: space-between;
 }
 
 section.latest,
