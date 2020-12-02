@@ -20,14 +20,8 @@ a {
   text-decoration: line-through;
 }
 
-.medium-logo {
-  display: none;
-}
-
-.nav1 {
-  display: none;
-}
-
+.medium-logo,
+.nav1,
 .nav2 {
   display: none;
 }
@@ -158,15 +152,7 @@ h2 > a {
   display: flex;
 }
 
-.clock-icon {
-  width: 15px;
-  height: 15px;
-  position: relative;
-  top: 5px;
-  right: 3px;
-}
-
-.share-icon {
+.story-icon {
   width: 15px;
   height: 15px;
   position: relative;
@@ -308,7 +294,7 @@ h2 > a {
   justify-content: center;
 }
 
-.display-flex-spacebt{
+.display-flex-spacebt {
   display: flex;
   justify-content: space-between;
 }
@@ -551,8 +537,8 @@ div.sections {
 
   .latest-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-gap: 10px;
   }
 
@@ -604,23 +590,24 @@ div.sections {
     display: none;
   }
 
-  .nav2 {
+  .nav2,
+  .top-links1,
+  .top-links2,
+  .top-links3 {
     position: relative;
   }
 
-  .top-links1 {
-    position: relative;
+  .top-links2 {
+    left: 0;
+  }
+
+  .top-links1,
+  .top-links3 {
     left: 15px;
   }
 
   .top-links2 {
-    position: relative;
     left: 0;
-  }
-
-  .top-links3 {
-    position: relative;
-    left: 15px;
   }
 
   .latest1 {
@@ -630,12 +617,12 @@ div.sections {
 
   .latest-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 
   .funding-grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .funding-grid > :last-child {
@@ -645,7 +632,7 @@ div.sections {
 
   div.sections {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     max-width: 1300px;
     margin: 0 auto;
   }
