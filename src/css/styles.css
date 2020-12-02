@@ -24,6 +24,10 @@ a {
   display: none;
 }
 
+.larger-logo {
+  display: none;
+}
+
 .nav1 {
   display: none;
 }
@@ -266,6 +270,10 @@ h2 > a {
 
 .funding-desc span {
   color: grey;
+}
+
+.font-bold {
+  font-weight: bold;
 }
 
 .font-bolder {
@@ -564,7 +572,7 @@ div.sections {
 
   .latest-item2 img {
     width: 100%;
-    height: auto;
+    height: 150px;
   }
 
   .story-section {
@@ -602,6 +610,19 @@ div.sections {
 
   .medium-logo {
     display: none;
+  }
+
+  .story-section {
+    position: relative;
+  }
+
+  .larger-logo {
+    display: block;
+    position: absolute;
+    width: 350px;
+    height: auto;
+    top: 0;
+    margin: 30px;
   }
 
   .nav2 {
