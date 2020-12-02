@@ -254,6 +254,10 @@ h2 > a {
   color: grey;
 }
 
+.font-bold {
+  font-weight: bold;
+}
+
 .font-bolder {
   font-weight: bolder;
 }
@@ -550,7 +554,7 @@ div.sections {
 
   .latest-item2 img {
     width: 100%;
-    height: auto;
+    height: 150px;
   }
 
   .story-section {
@@ -582,6 +586,14 @@ div.sections {
 }
 
 @media only screen and (min-width: 1024px) {
+
+  .top-links1,
+  .top-links2,
+  .top-links3,
+  .story-section {
+    position: relative;
+  }
+
   .story-section {
     margin-top: 90px;
   }
@@ -590,11 +602,13 @@ div.sections {
     display: none;
   }
 
-  .nav2,
-  .top-links1,
-  .top-links2,
-  .top-links3 {
-    position: relative;
+  .larger-logo {
+    display: block;
+    position: absolute;
+    width: 350px;
+    height: auto;
+    top: 0;
+    margin: 30px;
   }
 
   .top-links2 {
