@@ -17,6 +17,8 @@
     "@lhci/cli": "*",
     "gulp": "*",
     "gulp-autoprefixer": "*",
+    "gulp-clean-css": "*",
+    "gulp-purgecss": "*",
     "gulp-watch": "*",
     "hint": "*",
     "less": "*",
