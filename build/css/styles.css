@@ -16,16 +16,20 @@ a {
   color: black;
 }
 
-.medium-logo {
+.line-through {
+  text-decoration: line-through;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-none {
   display: none;
 }
 
-.nav1 {
-  display: none;
-}
-
-.nav2 {
-  display: none;
+.d-grid {
+  display: grid;
 }
 
 .nav3 {
@@ -41,7 +45,6 @@ div.nav-logo {
 a.nav-logo {
   width: 106px;
   height: 100%;
-  display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -60,7 +63,6 @@ div.nav-ics {
   height: 48px;
   float: left;
   border-left: 1px solid #eee;
-  display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
@@ -91,7 +93,6 @@ h2 > a {
 }
 
 .story-section {
-  display: grid;
   grid-template: repeat(3, 1fr) / 1fr;
   margin-top: 55px;
   z-index: 1;
@@ -114,6 +115,18 @@ h2 > a {
   bottom: 0;
   background: linear-gradient(to bottom, transparent 0%, #000 100%);
   z-index: 5;
+}
+
+.cover-bgi-1 {
+  background-image: url('/assets/images/lucid-air-configurator.jpg');
+}
+
+.cover-bgi-2 {
+  background-image: url('/assets/images/header-image.png');
+}
+
+.cover-bgi-3 {
+  background-image: url('/assets/images/1-copy-7.jpg');
 }
 
 .cover-bgi {
@@ -142,7 +155,6 @@ h2 > a {
 }
 
 .story-author {
-  display: flex;
   max-width: 300px;
   justify-content: space-around;
   margin-left: -6px;
@@ -150,19 +162,7 @@ h2 > a {
   color: grey;
 }
 
-.style-flex {
-  display: flex;
-}
-
-.clock-icon {
-  width: 15px;
-  height: 15px;
-  position: relative;
-  top: 5px;
-  right: 3px;
-}
-
-.share-icon {
+.story-icon {
   width: 15px;
   height: 15px;
   position: relative;
@@ -175,12 +175,7 @@ h2 > a {
 }
 
 .funding-grid {
-  display: grid;
   grid-template: 1fr / 1fr;
-}
-
-.funding-grid > :last-child {
-  display: none;
 }
 
 .funding-wrapper {
@@ -191,7 +186,6 @@ h2 > a {
 }
 
 .funding-links {
-  display: flex;
   flex-direction: column;
   line-height: 30px;
   font-size: small;
@@ -237,7 +231,6 @@ h2 > a {
 }
 
 .funding-tags {
-  display: flex;
   flex-direction: column;
   margin: 20px;
   color: #000;
@@ -264,6 +257,10 @@ h2 > a {
   color: grey;
 }
 
+.font-bold {
+  font-weight: bold;
+}
+
 .font-bolder {
   font-weight: bolder;
 }
@@ -273,14 +270,53 @@ h2 > a {
   color: grey;
 }
 
-.display-flex-margin1 {
-  display: flex;
+.color-orange {
+  color: #f42;
+}
+
+.color-grey {
+  color: grey;
+}
+
+.color-white {
+  color: white;
+}
+
+.mt-12px {
   margin-top: 12px;
 }
 
-.display-flex-margin2 {
-  display: flex;
+.mt-15px {
   margin-top: 15px;
+}
+
+.mr-15px {
+  margin-right: 15px;
+}
+
+.mr-2px {
+  margin-right: 2px;
+}
+
+.ml-2px {
+  margin-left: 2px;
+}
+
+.mt-2px {
+  margin-top: 2px;
+}
+
+.flx-jc-c {
+  justify-content: center;
+}
+
+.flx-jc-sb {
+  justify-content: space-between;
+}
+
+.no-margin-padding {
+  margin: 0;
+  padding: 0;
 }
 
 section.latest,
@@ -289,16 +325,15 @@ section.sections {
   padding-top: 24px;
 }
 
-div.latest {
-  display: flex;
-  flex-direction: column;
+.latest-see-all {
+  color: #f42;
+  margin-top: 10px;
 }
 
 .latest-item {
   flex-basis: 100%;
   max-width: 100%;
   min-height: 72px;
-  display: flex;
   margin: 4px 0;
 }
 
@@ -311,7 +346,6 @@ div.latest {
 }
 
 .latest-content {
-  display: flex;
   flex-direction: column;
   font-size: 12px;
 }
@@ -368,7 +402,6 @@ footer {
 }
 
 .icons {
-  display: flex;
   flex-direction: row;
   justify-content: center;
 }
@@ -383,7 +416,6 @@ footer {
 }
 
 .footer-nav {
-  display: flex;
   justify-content: space-between;
   max-width: 300px;
   margin: 0 auto;
@@ -396,7 +428,6 @@ footer {
 }
 
 .footer-link {
-  display: flex;
   justify-content: center;
   padding-top: 10px;
 }
@@ -420,7 +451,6 @@ footer {
 }
 
 div.sections {
-  display: grid;
   grid-template: 1fr / 1fr;
 }
 
@@ -457,8 +487,20 @@ div.sections {
 }
 
 @media only screen and (min-width: 768px) {
-  .nav3 {
+  .d-none-m {
     display: none;
+  }
+
+  .d-flex-m {
+    display: flex;
+  }
+
+  .d-grid-m {
+    display: grid;
+  }
+
+  .uhd-m {
+    display: initial;
   }
 
   .medium-logo {
@@ -466,7 +508,6 @@ div.sections {
     min-width: 100px;
     max-width: 100px;
     height: 70px;
-    display: flex;
     justify-content: center;
     position: absolute;
     z-index: 999;
@@ -474,7 +515,6 @@ div.sections {
 
   .nav1 {
     color: #000;
-    display: flex;
     justify-content: space-between;
     background-color: #131313;
     height: 30px;
@@ -497,7 +537,6 @@ div.sections {
   }
 
   .nav2 {
-    display: flex;
     justify-content: space-between;
     position: relative;
     font-size: 13px;
@@ -517,21 +556,19 @@ div.sections {
   }
 
   .latest-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     grid-gap: 10px;
   }
 
   .latest-item2 {
-    display: block;
     min-width: 230px;
     max-width: 328px;
   }
 
   .latest-item2 img {
     width: 100%;
-    height: auto;
+    height: 150px;
   }
 
   .story-section {
@@ -545,7 +582,6 @@ div.sections {
   }
 
   .funding-grid {
-    display: grid;
     grid-template: 1fr / repeat(3, 1fr);
   }
 
@@ -557,36 +593,50 @@ div.sections {
     margin-right: 0;
   }
 
+  .funding-grid > :nth-child(4) {
+    margin-right: 0;
+    margin-left: 20px;
+  }
+
   div.sections {
     grid-template: 1fr / repeat(2, 1fr);
   }
 }
 
 @media only screen and (min-width: 1024px) {
+  .d-none-l {
+    display: none;
+  }
+
+  .uhd-l {
+    display: initial;
+  }
+
+  .top-links1,
+  .top-links2,
+  .top-links3,
+  .story-section {
+    position: relative;
+  }
+
   .story-section {
     margin-top: 90px;
   }
 
-  .medium-logo {
-    display: none;
-  }
-
-  .nav2 {
-    position: relative;
-  }
-
-  .top-links1 {
-    position: relative;
-    left: 15px;
+  .larger-logo {
+    position: absolute;
+    width: 350px;
+    height: auto;
+    top: 0;
+    margin: 30px;
   }
 
   .top-links2 {
-    position: relative;
     left: 0;
   }
 
+  .top-links1,
   .top-links3 {
-    position: relative;
     left: 15px;
   }
 
@@ -596,23 +646,16 @@ div.sections {
   }
 
   .latest-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
   }
 
   .funding-grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-
-  .funding-grid > :last-child {
-    margin-left: 20px;
-    display: block;
+    grid-template-columns: repeat(4, 1fr);
   }
 
   div.sections {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     max-width: 1300px;
     margin: 0 auto;
   }
