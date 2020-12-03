@@ -7,8 +7,8 @@ if [ -z "$BASH_VERSION" -a -z "$ZSH_VERSION" ]; then
   echo "Please use a BASH-like shell to run this script."
   exit 1
 fi
-if [ ! -e .rootholder ]; then
-  echo "Please run this script inside the root folder of the project."
+if [ ! -e .git/ ]; then
+  echo "Please run this script inside the root folder of a git project."
   exit 1
 fi
 
@@ -19,25 +19,30 @@ RUN_GULP=${RUN_GULP:-$YES}
 RUN_GULP_STYLES=${RUN_GULP_STYLES:-$YES}
 RUN_HINT=${RUN_HINT:-$YES}
 RUN_STYLELINT=${RUN_STYLELINT:-$YES}
-STYLELINT_MATCH_PATTERN=${STYLELINT_MATCH_PATTERN:-'src/**/*.{css,scss,sass} !**/{built,build}/**'}
-RUN_LHCI=${RUN_LHCI:-$YES}
+STYLELINT_MATCH_PATTERN=${STYLELINT_MATCH_PATTERN:-'src/**/*.{css,scss,less} !**/{built,build}/**'}
+RUN_LHCI=${RUN_LHCI:-$NO}
 RUN_SASS=${RUN_SASS:-$YES}
-RUN_BUILD=${RUN_BUILD:-'src/css/built'}
-SASS_SOURCE=${SASS_SOURCE:-'src/{scss,sass}'}
-RUN_SASS_WATCH=${RUN_SASS_WATCH:-$NO}
+SASS_BUILT=${SASS_BUILT:-'src/built'}
+SASS_SOURCE=${SASS_SOURCE:-'src/**/*.{sass,scss}'}
+RUN_LESS=${RUN_LESS:-$YES}
+LESS_BUILT=${LESS_BUILT:-'src/built'}
+LESS_MATCH=${LESS_MATCH:-'src/**/*.less'}
 
 function _which {
   if [[ -n "$ZSH_VERSION" ]]; then
     builtin whence -p "$1"
+    setopt extendedglob
   else
     builtin type -P "$1"
+    shopt -s extglob
   fi
 }
 
 function _print_run {
   local DESC=$1; shift
   printf '\e[7m!~ %s (\e[4m%s\e[24m)\e[27m\r\n' "Running command '$*'" "$DESC"
-  time "$@"
+  "$@"
+  printf '\e[7m!! %s: \e[4m%s\e[24m\e[27m\r\n' "Exit code" "$?"
   printf '\e[7m!+ %s (\e[4m%s\e[24m)\e[27m\r\n' "Done running command '$*'" "$DESC"
 }
 
@@ -47,14 +52,24 @@ if [ -z "$NPX" ]; then
   exit 2
 fi
 
+clear; clear;
+
 # Run the `sass` preprocessor
 if [ "x$RUN_SASS" = "x$YES" ]; then
-  SASS_RULE=$(eval echo "$SASS_SOURCE:$RUN_BUILD")
-  if [ "x$RUN_SASS_WATCH" = "x$YES" ]; then
-    _print_run "SASS CSS preprocessor watch" $NPX sass --watch $SASS_RULE &
-  else
-    _print_run "SASS CSS preprocessor" $NPX sass $SASS_RULE
-  fi
+  eval SASS_SRC=( $SASS_SOURCE )
+  for src in "${SASS_SRC[@]}"; do
+    dst="${SASS_BUILT}/$(basename "$src").css"
+    _print_run "SASS CSS preprocessor" $NPX sass "$src:$dst"
+  done
+fi
+
+# Run the `less` preprocessor
+if [ "x$RUN_LESS" = "x$YES" ]; then
+  eval LESS_SRC=( $LESS_MATCH )
+  for src in "${LESS_SRC[@]}"; do
+    dst="${LESS_BUILT}/$(basename "$src").css"
+    _print_run "LESS CSS preprocessor" $NPX lessc "$src" "$dst"
+  done
 fi
 
 # Run the `stylelint` linter
@@ -77,5 +92,3 @@ fi
 if [ "x$RUN_LHCI" = "x$YES" ]; then
   _print_run "Lighthouse web auditor" $NPX lhci autorun --collect.staticDistDir="$PWD"
 fi
-
-
