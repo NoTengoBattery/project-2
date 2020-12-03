@@ -82,7 +82,7 @@ body {
     color: #f42;
   }
   .story-section {
-    grid-template: repeat(3, 1fr);
+    grid-template: ~"repeat(3, 1fr) / 1fr";
     margin-top: 55px;
     z-index: 1;
     height: 90vh;
@@ -159,7 +159,7 @@ body {
   }
   
   .funding-grid {
-    grid-template: 1fr / 1fr;
+    grid-template: ~"1fr / 1fr";
   }
   
   .funding-wrapper {
@@ -399,7 +399,7 @@ body {
     font-size: smaller;
   }
   div.sections {
-    grid-template: 1fr / 1fr;
+    grid-template: ~"1fr / 1fr";
   }
   .cover-popular {
     margin: 0;
@@ -497,11 +497,11 @@ body {
       }
     }
     .story-section {
-      grid-template: repeat(2, 1fr);
+      grid-template: ~"repeat(2, 1fr) / 3fr 2fr";
       height: 50vh;
     }
     .story-section > :first-child {
-      grid-area: 1 / 1 / span 2 / span 1;
+      grid-area: ~"1 / 1 / span 2 / span 1";
       margin-right: 0;
     }
     .funding-grid {
@@ -518,7 +518,7 @@ body {
       margin-left: 20px;
     }
     div.sections {
-      grid-template: 1fr 
+      grid-template: ~"1fr / repeat(2, 1fr)";
     }
   }
   @media only screen and (min-width: 1024px) {

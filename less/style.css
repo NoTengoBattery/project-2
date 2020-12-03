@@ -144,7 +144,7 @@ body .latest-funding {
   padding: 20px;
 }
 body .funding-grid {
-  grid-template: 1fr;
+  grid-template: 1fr / 1fr;
 }
 body .funding-wrapper {
   background-color: rgba(255, 68, 34, 0.03);
@@ -369,7 +369,7 @@ body .credits {
   font-size: smaller;
 }
 body div.sections {
-  grid-template: 1fr;
+  grid-template: 1fr / 1fr;
 }
 body .cover-popular {
   margin: 0;
@@ -467,15 +467,15 @@ body .latest-popular > .latest-item .latest-content {
     height: 150px;
   }
   body .story-section {
-    grid-template: repeat(2, 1fr)  / 3fr 2fr;;
+    grid-template: repeat(2, 1fr) / 3fr 2fr;
     height: 50vh;
   }
   body .story-section > :first-child {
-    grid-area: 1 / span 2 / span 1;
+    grid-area: 1 / 1 / span 2 / span 1;
     margin-right: 0;
   }
   body .funding-grid {
-    grid-template: 1fr / repeat(3, 1fr);;
+    grid-template: 1fr;
   }
   body .funding-wrapper {
     margin-right: 20px;
@@ -488,7 +488,7 @@ body .latest-popular > .latest-item .latest-content {
     margin-left: 20px;
   }
   body div.sections {
-    grid-template: 1fr / repeat(2, 1fr);;
+    grid-template: 1fr / repeat(2, 1fr);
   }
 }
 @media only screen and (min-width: 1024px) {
