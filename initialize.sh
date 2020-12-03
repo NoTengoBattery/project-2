@@ -8,7 +8,7 @@ if [ -z "$BASH_VERSION" -a -z "$ZSH_VERSION" ]; then
   exit 1
 fi
 if [ ! -e .rootholder ]; then
-  echo "Please run this script inside the root folder of the project."
+  echo "Please run this inside the root folder of an uninitialized project."
   exit 1
 fi
 
@@ -26,7 +26,6 @@ if [ -z "$NPM" ]; then
   exit 2
 fi
 
-rm -rf package-lock.json node_modules
 $NPM install # This will install all the Node.js dependencies
 if [ $? -eq 0 ]; then
   echo "All dependencies installed successfully."
@@ -34,15 +33,15 @@ else
   echo "Failed to install all dependencies."
   exit 3
 fi
+$NPM update
+$NPM audit fix
 
 readonly GIT=$(_which git)
 if [ -z "$GIT" ]; then
   echo "Git is not installed or not available in the PATH."
+  echo "You really, really want GIT in your PATH."
   exit 4
 fi
-
-$GIT add .
-$GIT commit -m "project: initialize the project from the template"
 
 readonly CURL=$(_which curl)
 if [ -z "$CURL" ]; then
@@ -60,6 +59,12 @@ $CURL $LC/.github/workflows/linters.yml -o .github/workflows/linters.yml -s
 mv -f README.md README.md.old
 $CURL $RT/README.md -o README.md -s
 $CURL https://unpkg.com/reset-css/reset.css -o src/css/reset.css -s -L
+
+find . \( -name '.placeholder' -o -name '.rootholder' \) -a -type f -delete
+
+$GIT init
+$GIT add .
+$GIT commit -m "project: initialize the project"
 
 echo "Done!"
 exit 0

@@ -5,8 +5,8 @@
 hint-report/
 *.old
 
-# Created by https://www.toptal.com/developers/gitignore/api/node,linux,macos,windows
-# Edit at https://www.toptal.com/developers/gitignore?templates=node,linux,macos,windows
+# Created by https://www.toptal.com/developers/gitignore/api/linux,macos,node,sass,vscode,windows
+# Edit at https://www.toptal.com/developers/gitignore?templates=linux,macos,node,sass,vscode,windows
 
 ### Linux ###
 *~
@@ -163,6 +163,20 @@ dist
 # Stores VSCode versions used for testing VSCode extensions
 .vscode-test
 
+### Sass ###
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
+
+### vscode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
 ### Windows ###
 # Windows thumbnail cache files
 Thumbs.db
@@ -189,4 +203,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/node,linux,macos,windows
+# End of https://www.toptal.com/developers/gitignore/api/linux,macos,node,sass,vscode,windows

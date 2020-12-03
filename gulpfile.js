@@ -7,13 +7,13 @@ var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('styles', function (done) {
   'use strict';
-  gulp.src('src/css/**/*.css')
+  gulp.src('src/**/*.css')
     .pipe(autoprefixer())
-    .pipe(gulp.dest('build/css'));
+    .pipe(gulp.dest('build'));
   done();
 });
 
 gulp.task('watch', function () {
   'use strict';
-  gulp.watch('css/**/*.css', gulp.series('styles'));
+  gulp.watch('src/**/*.css', gulp.series('styles'));
 });
