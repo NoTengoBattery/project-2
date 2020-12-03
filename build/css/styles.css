@@ -1,6 +1,47 @@
-body{font-family:Roboto,sans-serif}
-header{position:fixed;top:0;width:100%;box-shadow:0 0 32px rgba(0,0,0,.15);z-index:999;background-color:#fff}
-a{text-decoration:none;color:#000}
-.nav3{height:48px}
-.icons{flex-direction:row;justify-content:center}
-.icons div{width:40px;height:40px;background-color:#555;border-radius:50%;margin:20px 3px 3px}
+body {
+  font-family: Roboto,sans-serif
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 0 32px rgba(0,0,0,.15);
+  z-index: 999;
+  background-color: #fff
+}
+a {
+  text-decoration: none;
+  color: #000
+}
+.nav3 {
+  height: 48px
+}
+.story-header {
+  font-size: small
+}
+.story-desc {
+  font-size: larger;
+  font-weight: 600
+}
+.story-author {
+  max-width: 300px;
+  justify-content: space-around;
+  margin-left: -6px;
+  font-size: smaller;
+  color: grey
+}
+.no-margin-padding {
+  margin: 0;
+  padding: 0
+}
+.icons {
+  flex-direction: row;
+  justify-content: center
+}
+.icons div {
+  width: 40px;
+  height: 40px;
+  background-color: #555;
+  border-radius: 50%;
+  margin: 20px 3px 3px
+}

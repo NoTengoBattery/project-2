@@ -1,7 +1,6 @@
 @import styles_partial
 $sub: s
 +gen
-+wd($sub, 106,px)
 
 body
   font-family: "Roboto", sans-serif
@@ -42,4 +41,57 @@ header
         @extend .flt-left-#{$sub}
         border-left: 1px solid #eee
       a.icon
-        @extend .fz-16px-#{$sub}
+        @extend .fzd-16px-#{$sub}
+      a.search
+        color: #555
+      a.menu
+        color: #f42
+main
+  min-width: 285px
+  section.story
+    @extend .hd-90vh-#{$sub}
+    @extend .d-grid-#{$sub}
+    grid-template: repeat(3, 1fr) / 1fr
+    margin-top: 55px
+    z-index: 1
+  article.story
+    @extend .m-10px-#{$sub}
+    @extend .p-relative-#{$sub}
+    @extend .xh-d1-#{$sub}
+    margin-top: 0
+    .story-bgi
+      @extend .h-d1-#{$sub}
+      background-repeat: no-repeat
+      background-position: 50% 50%
+      background-size: cover
+    .cover1
+      background-image: url('../../assets/images/lucid-air-configurator.jpg')
+    .cover2
+      background-image: url('../../assets/images/header-image.png')
+    .cover3
+      background-image: url('../../assets/images/1-copy-7.jpg')
+    .story-content
+      @extend .c-white-#{$sub}
+      @extend .p-absolute-#{$sub}
+      @extend .pa-12px-#{$sub}
+      bottom: 0
+      line-height: 25px
+      z-index: 10
+    .story-content
+      font-size: small
+    .story-desc
+      font-size: larger
+      font-weight: 600
+    .story-author
+      @extend .d-flex-#{$sub}
+      @extend .f-jc-space-around-#{$sub}
+      font-size: smaller
+      max-width: 240px
+      > div
+        @extend .f-ai-center-#{$sub}
+        @extend .d-flex-#{$sub}
+      .icon
+        @extend .hd-15px-#{$sub}
+        @extend .p-relative-#{$sub}
+        @extend .wd-15px-#{$sub}
+        margin-right: 6px

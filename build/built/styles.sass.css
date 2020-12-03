@@ -1,13 +1,126 @@
-header .nav3 div.logo{background-color:#000}
-header{background-color:#fff;position:fixed;width:calc(100%/1);box-shadow:0 0 32px rgba(0,0,0,.15);top:0;z-index:999}
-a{color:#000;text-decoration:none}
-header .nav3 .icons div.icon,header .nav3 a.logo{display:flex;align-items:center;justify-content:space-around}
-header .nav3 .icons div.icon,header .nav3 div.logo{float:left}
-header .nav3 .icons{float:right}
-header .nav3 .icons a.icon{font-size:16px}
-header .nav3 a.logo,header .nav3 div.logo{height:calc(100%/1)}
-header .nav3,header .nav3 .icons div.icon{height:48px}
-header .nav3 img.logo{height:16px}
-header .nav3 .icons div.icon{width:48px;border-left:1px solid #eee}
-header .nav3 a.logo{width:106px}
-body{font-family:Roboto,sans-serif}
+header .nav3 div.logo {
+  background-color: #000
+}
+a {
+  color: #000;
+  text-decoration: none
+}
+header {
+  background-color: #fff;
+  width: 100%;
+  position: fixed;
+  box-shadow: 0 0 32px rgba(0,0,0,.15);
+  top: 0;
+  z-index: 999
+}
+main article.story .story-content {
+  color: #fff;
+  padding: 12px;
+  position: absolute;
+  bottom: 0;
+  line-height: 25px;
+  z-index: 10;
+  font-size: small
+}
+header .nav3 .icons div.icon,
+header .nav3 a.logo,
+main article.story .story-author,
+main article.story .story-author > div {
+  display: flex
+}
+header .nav3 .icons div.icon,
+header .nav3 a.logo,
+main article.story .story-author > div {
+  align-items: center
+}
+header .nav3 .icons div.icon,
+header .nav3 a.logo,
+main article.story .story-author {
+  justify-content: space-around
+}
+header .nav3 .icons div.icon,
+header .nav3 div.logo {
+  float: left
+}
+header .nav3 .icons {
+  float: right
+}
+main article.story {
+  margin: 10px
+}
+main article.story .story-author .icon {
+  height: 15px;
+  width: 15px;
+  margin-right: 6px
+}
+header .nav3 .icons a.icon {
+  font-size: 16px
+}
+header .nav3 img.logo {
+  height: 16px
+}
+header .nav3,
+header .nav3 .icons div.icon {
+  height: 48px
+}
+header .nav3 .icons div.icon {
+  width: 48px;
+  border-left: 1px solid #eee
+}
+main section.story {
+  display: grid;
+  height: 90vh;
+  grid-template: repeat(3,1fr)/1fr;
+  margin-top: 55px;
+  z-index: 1
+}
+header .nav3 a.logo {
+  width: 106px
+}
+header .nav3 a.logo,
+header .nav3 div.logo,
+main article.story .story-bgi {
+  height: 100%
+}
+main article.story {
+  max-height: 100%;
+  margin-top: 0
+}
+main article.story,
+main article.story .story-author .icon {
+  position: relative
+}
+body {
+  font-family: Roboto,sans-serif
+}
+header .nav3 .icons a.search {
+  color: #555
+}
+header .nav3 .icons a.menu {
+  color: #f42
+}
+main {
+  min-width: 285px
+}
+main article.story .story-bgi {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover
+}
+main article.story .cover1 {
+  background-image: url(../../assets/images/lucid-air-configurator.jpg)
+}
+main article.story .cover2 {
+  background-image: url(../../assets/images/header-image.png)
+}
+main article.story .cover3 {
+  background-image: url(../../assets/images/1-copy-7.jpg)
+}
+main article.story .story-desc {
+  font-size: larger;
+  font-weight: 600
+}
+main article.story .story-author {
+  font-size: smaller;
+  max-width: 240px
+}

@@ -1,4 +1,35 @@
-a,body,div,header,html,i,img,menu,nav{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}
-header,menu,nav{display:block}
-body{line-height:1}
-menu{list-style:none}
+a,
+article,
+body,
+div,
+header,
+html,
+i,
+img,
+main,
+menu,
+nav,
+p,
+s,
+section {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline
+}
+article,
+header,
+main,
+menu,
+nav,
+section {
+  display: block
+}
+body {
+  line-height: 1
+}
+menu {
+  list-style: none
+}

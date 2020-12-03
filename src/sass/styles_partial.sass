@@ -1,3 +1,5 @@
+@use "sass:math"
+
 =bgc($sub, $bgc)
   .bgc-#{"" + $bgc}-#{$sub}
     background-color: $bgc
@@ -10,114 +12,106 @@
   .d-#{$d}-#{$sub}
     display: $d
 
+=f-ac($sub, $f-ac)
+  .f-ac-#{$f-ac}-#{$sub}
+    align-content: $f-ac
+
 =f-ai($sub, $f-ai)
   .f-ai-#{$f-ai}-#{$sub}
     align-items: $f-ai
 
+=f-as($sub, $f-as)
+  .f-as-#{$f-as}-#{$sub}
+    align-self: $f-as
+
 =f-jc($sub, $f-jc)
   .f-jc-#{$f-jc}-#{$sub}
     justify-content: $f-jc
+
+=f-ji($sub, $f-ji)
+  .f-ji-#{$f-ji}-#{$sub}
+    justify-items: $f-ji
+
+=f-js($sub, $f-js)
+  .f-js-#{$f-js}-#{$sub}
+    justify-self: $f-js
 
 =flt($sub, $flt)
   .flt-#{$flt}-#{$sub}
     float: $flt
 
 =fz($sub, $fz)
-  .fz#{$fz}-#{$sub}
-    font-size: #{$fz} + "%"
+  .fz-d#{$fz}-#{$sub}
+    font-size: #{100/$fz} + "%"
 
 =fzd($sub, $fz, $d)
-  .fz-#{$fz + $d}-#{$sub}
+  .fzd-#{$fz + $d}-#{$sub}
     font-size: #{$fz + $d}
 
 =h($sub, $h)
   .h-d#{$h}-#{$sub}
-    height: calc(100%/#{$h})
+    height: #{100/$h} + "%"
 
 =hd($sub, $h, $d)
   .hd-#{$h + $d}-#{$sub}
     height: #{$h + $d}
 
+=m($sub, $m, $d)
+  .m-#{$m + $d}-#{$sub}
+    margin: #{$m + $d}
+
 =p($sub, $p)
   .p-#{$p}-#{$sub}
     position: $p
 
+=pa($sub, $pa, $d)
+  .pa-#{$pa + $d}-#{$sub}
+    padding: #{$pa + $d}
+
 =w($sub, $w)
   .w-d#{$w}-#{$sub}
-    width: calc(100%/#{$w})
+    width: #{100/$w} + "%"
 
 =wd($sub, $w, $d)
   .wd-#{$w + $d}-#{$sub}
     width: #{$w + $d}
 
+=xh($sub, $xh)
+  .xh-d#{$xh}-#{$sub}
+    max-height: #{100/$xh} + "%"
+
+=xw($sub, $xw)
+  .xw-d#{$xw}-#{$sub}
+    max-width: #{100/$xw} + "%"
+
 =gen()
-  +bgc($sub, black)
-  +bgc($sub, white)
-  +c($sub, black)
-  +c($sub, white)
-  +d($sub, block)
-  +d($sub, flex)
-  +d($sub, grid)
-  +d($sub, inherit)
-  +d($sub, initial)
-  +d($sub, inline)
-  +d($sub, none)
-  +d($sub, table)
-  +f-ai($sub, baseline)
-  +f-ai($sub, center)
-  +f-ai($sub, flex-end)
-  +f-ai($sub, flex-start)
-  +f-ai($sub, inherit)
-  +f-ai($sub, initial)
-  +f-ai($sub, stretch)
-  +f-jc($sub, center)
-  +f-jc($sub, flex-end)
-  +f-jc($sub, flex-start)
-  +f-jc($sub, inherit)
-  +f-jc($sub, initial)
-  +f-jc($sub, space-around)
-  +f-jc($sub, space-between)
-  +flt($sub, inherit)
-  +flt($sub, left)
-  +flt($sub, none)
-  +flt($sub, right)
-  +fzd($sub, 16,px)
-  +h($sub, 1)
-  +h($sub, 2)
-  +h($sub, 3)
-  +h($sub, 4)
-  +h($sub, 5)
-  +h($sub, 8)
-  +h($sub, 10)
-  +hd($sub, 64,px)
-  +hd($sub, 48,px)
-  +hd($sub, 36,px)
-  +hd($sub, 24,px)
-  +hd($sub, 16,px)
-  +hd($sub, 8,px)
-  +hd($sub, 4,px)
-  +hd($sub, 2,px)
-  +hd($sub, 1,px)
-  +p($sub, absolute)
-  +p($sub, fixed)
-  +p($sub, inherit)
-  +p($sub, initial)
-  +p($sub, relative)
-  +p($sub, static)
-  +p($sub, sticky)
-  +w($sub, 1)
-  +w($sub, 2)
-  +w($sub, 3)
-  +w($sub, 4)
-  +w($sub, 5)
-  +w($sub, 8)
-  +w($sub, 10)
-  +wd($sub, 64,px)
-  +wd($sub, 48,px)
-  +wd($sub, 36,px)
-  +wd($sub, 24,px)
-  +wd($sub, 16,px)
-  +wd($sub, 8,px)
-  +wd($sub, 4,px)
-  +wd($sub, 2,px)
-  +wd($sub, 1,px)
+  @each $color in black,gray,white
+    +bgc($sub, $color)
+    +c($sub, $color)
+  @each $display in block,contents,flex,flow-root,grid,inherit,initial,inline,inline-block,inline-flex,inline-grid,inline-table,list-item,none,revert,table,table-caption,table-cell,table-column,table-column-group
+    +d($sub, $display)
+  @each $align in auto,baseline,center,end,flex-end,flex-start,inherit,initial,normal,revert,self-end,self-start,space-around,space-between,space-evenly,start,start,stretch,unset
+    +f-ac($sub, $align)
+    +f-ai($sub, $align)
+    +f-as($sub, $align)
+    +f-jc($sub, $align)
+    +f-ji($sub, $align)
+    +f-js($sub, $align)
+  @each $float in inherit,initial,initial-end,initial-start,left,none,revert,right,unset
+    +flt($sub, $float)
+  @for $size from 0 through 128
+    +fzd($sub, $size,px)
+    +hd($sub, $size,px)
+    +hd($sub, $size,vh)
+    +m($sub, $size,px)
+    +pa($sub, $size,px)
+    +wd($sub, $size,px)
+    +wd($sub, $size,vh)
+  @for $div from 1 through 25
+    +fz($sub, $div)
+    +h($sub, $div)
+    +w($sub, $div)
+    +xh($sub, $div)
+    +xw($sub, $div)
+  @each $pos in revert,unset,absolute,fixed,inherit,initial,relative,static,sticky
+    +p($sub, $pos)

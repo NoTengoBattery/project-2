@@ -10,14 +10,14 @@ var purgecss = require('gulp-purgecss');
 gulp.task('styles', function (done) {
   'use strict';
   gulp.src('src/**/*.css')
-    .pipe(autoprefixer())
     .pipe(purgecss({
       content: ['src/**/*.html', 'index.html']
     }))
     .pipe(cleancss({
-      format: 'keep-breaks',
+      format: 'beautify',
       level: 2
     }))
+    .pipe(autoprefixer())
     .pipe(gulp.dest('build'));
   done();
 });
