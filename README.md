@@ -42,7 +42,7 @@ For this project, you do not need to do anything. You can see the project workin
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/NoTengoBattery/project-2/issues).
 
 ## Show your support
 

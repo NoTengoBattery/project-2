@@ -648,6 +648,20 @@ div.sections {
     grid-template-rows: repeat(2, 1fr);
   }
 
+  .larger-pos {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .funding-links {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .funding-links a {
+    margin-left: 10px;
+  }
+
   .funding-grid {
     grid-template-columns: repeat(4, 1fr);
   }
