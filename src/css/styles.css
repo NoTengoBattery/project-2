@@ -118,15 +118,15 @@ h2 > a {
 }
 
 .cover-bgi-1 {
-  background-image: url('/assets/images/lucid-air-configurator.jpg');
+  background-image: url('../../assets/images/lucid-air-configurator.jpg');
 }
 
 .cover-bgi-2 {
-  background-image: url('/assets/images/header-image.png');
+  background-image: url('../../assets/images/header-image.png');
 }
 
 .cover-bgi-3 {
-  background-image: url('/assets/images/1-copy-7.jpg');
+  background-image: url('../../assets/images/1-copy-7.jpg');
 }
 
 .cover-bgi {
