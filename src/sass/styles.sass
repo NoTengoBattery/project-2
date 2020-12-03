@@ -1,0 +1,45 @@
+@import styles_partial
+$sub: s
++gen
++wd($sub, 106,px)
+
+body
+  font-family: "Roboto", sans-serif
+
+a
+  @extend .c-black-#{$sub}
+  text-decoration: none
+
+header
+  @extend .bgc-white-#{$sub}
+  @extend .p-fixed-#{$sub}
+  @extend .w-d1-#{$sub}
+  box-shadow: 0 0 32px rgba(0, 0, 0, 0.15)
+  top: 0
+  z-index: 999
+  .nav3
+    @extend .hd-48px-#{$sub}
+    div.logo
+      @extend .bgc-black-#{$sub}
+      @extend .flt-left-#{$sub}
+      @extend .h-d1-#{$sub}
+    a.logo
+      @extend .d-flex-#{$sub}
+      @extend .f-ai-center-#{$sub}
+      @extend .f-jc-space-around-#{$sub}
+      @extend .h-d1-#{$sub}
+      @extend .wd-106px-#{$sub}
+    img.logo
+      @extend .hd-16px-#{$sub}
+    .icons
+      @extend .flt-right-#{$sub}
+      div.icon
+        @extend .d-flex-#{$sub}
+        @extend .hd-48px-#{$sub}
+        @extend .wd-48px-#{$sub}
+        @extend .f-ai-center-#{$sub}
+        @extend .f-jc-space-around-#{$sub}
+        @extend .flt-left-#{$sub}
+        border-left: 1px solid #eee
+      a.icon
+        @extend .fz-16px-#{$sub}

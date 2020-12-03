@@ -4,6 +4,7 @@
 .lighthouseci/
 hint-report/
 *.old
+*_partial*.css
 
 # Created by https://www.toptal.com/developers/gitignore/api/linux,macos,node,sass,vscode,windows
 # Edit at https://www.toptal.com/developers/gitignore?templates=linux,macos,node,sass,vscode,windows

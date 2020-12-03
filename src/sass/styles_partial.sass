@@ -1,0 +1,123 @@
+=bgc($sub, $bgc)
+  .bgc-#{"" + $bgc}-#{$sub}
+    background-color: $bgc
+
+=c($sub, $c)
+  .c-#{"" + $c}-#{$sub}
+    color: $c
+
+=d($sub, $d)
+  .d-#{$d}-#{$sub}
+    display: $d
+
+=f-ai($sub, $f-ai)
+  .f-ai-#{$f-ai}-#{$sub}
+    align-items: $f-ai
+
+=f-jc($sub, $f-jc)
+  .f-jc-#{$f-jc}-#{$sub}
+    justify-content: $f-jc
+
+=flt($sub, $flt)
+  .flt-#{$flt}-#{$sub}
+    float: $flt
+
+=fz($sub, $fz)
+  .fz#{$fz}-#{$sub}
+    font-size: #{$fz} + "%"
+
+=fzd($sub, $fz, $d)
+  .fz-#{$fz + $d}-#{$sub}
+    font-size: #{$fz + $d}
+
+=h($sub, $h)
+  .h-d#{$h}-#{$sub}
+    height: calc(100%/#{$h})
+
+=hd($sub, $h, $d)
+  .hd-#{$h + $d}-#{$sub}
+    height: #{$h + $d}
+
+=p($sub, $p)
+  .p-#{$p}-#{$sub}
+    position: $p
+
+=w($sub, $w)
+  .w-d#{$w}-#{$sub}
+    width: calc(100%/#{$w})
+
+=wd($sub, $w, $d)
+  .wd-#{$w + $d}-#{$sub}
+    width: #{$w + $d}
+
+=gen()
+  +bgc($sub, black)
+  +bgc($sub, white)
+  +c($sub, black)
+  +c($sub, white)
+  +d($sub, block)
+  +d($sub, flex)
+  +d($sub, grid)
+  +d($sub, inherit)
+  +d($sub, initial)
+  +d($sub, inline)
+  +d($sub, none)
+  +d($sub, table)
+  +f-ai($sub, baseline)
+  +f-ai($sub, center)
+  +f-ai($sub, flex-end)
+  +f-ai($sub, flex-start)
+  +f-ai($sub, inherit)
+  +f-ai($sub, initial)
+  +f-ai($sub, stretch)
+  +f-jc($sub, center)
+  +f-jc($sub, flex-end)
+  +f-jc($sub, flex-start)
+  +f-jc($sub, inherit)
+  +f-jc($sub, initial)
+  +f-jc($sub, space-around)
+  +f-jc($sub, space-between)
+  +flt($sub, inherit)
+  +flt($sub, left)
+  +flt($sub, none)
+  +flt($sub, right)
+  +fzd($sub, 16,px)
+  +h($sub, 1)
+  +h($sub, 2)
+  +h($sub, 3)
+  +h($sub, 4)
+  +h($sub, 5)
+  +h($sub, 8)
+  +h($sub, 10)
+  +hd($sub, 64,px)
+  +hd($sub, 48,px)
+  +hd($sub, 36,px)
+  +hd($sub, 24,px)
+  +hd($sub, 16,px)
+  +hd($sub, 8,px)
+  +hd($sub, 4,px)
+  +hd($sub, 2,px)
+  +hd($sub, 1,px)
+  +p($sub, absolute)
+  +p($sub, fixed)
+  +p($sub, inherit)
+  +p($sub, initial)
+  +p($sub, relative)
+  +p($sub, static)
+  +p($sub, sticky)
+  +w($sub, 1)
+  +w($sub, 2)
+  +w($sub, 3)
+  +w($sub, 4)
+  +w($sub, 5)
+  +w($sub, 8)
+  +w($sub, 10)
+  +wd($sub, 64,px)
+  +wd($sub, 48,px)
+  +wd($sub, 36,px)
+  +wd($sub, 24,px)
+  +wd($sub, 16,px)
+  +wd($sub, 8,px)
+  +wd($sub, 4,px)
+  +wd($sub, 2,px)
+  +wd($sub, 1,px)
