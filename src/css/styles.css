@@ -610,6 +610,12 @@ div.sections {
     display: initial;
   }
 
+  .pipe::after {
+    content: '|';
+    font-weight: bolder;
+    margin-left: 10px;
+  }
+
   .top-links1,
   .top-links2,
   .top-links3,
