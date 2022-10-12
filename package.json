@@ -20,7 +20,7 @@
     "gulp-watch": "*",
     "hint": "*",
     "less": "*",
-    "lighthouse": "^6.5.0",
+    "lighthouse": "^9.6.7",
     "sass": "*",
     "stylelint": "*",
     "stylelint-config-standard": "*",
